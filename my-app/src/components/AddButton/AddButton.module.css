@@ -1,0 +1,18 @@
+.add {
+    border: none;
+    padding: 6px 12px;
+    background: aquamarine;
+    color: #555;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+}
+
+.add:hover {
+    background: #6fd6b3;
+    color: black;
+}

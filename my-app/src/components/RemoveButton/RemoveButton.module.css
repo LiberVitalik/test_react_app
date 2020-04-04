@@ -1,0 +1,43 @@
+.close {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    opacity: 0.3;
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    content: ' ';
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.close:focus,
+.close:active {
+    outline: none;
+}
+
+.close:active {
+    border: 1px solid transparent;
+}
